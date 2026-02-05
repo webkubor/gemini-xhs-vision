@@ -12,6 +12,12 @@
 - **☁️ 自动化 R2 存储**: 生成图片后自动上传至 Cloudflare R2，直接返回 Markdown 外链，即拿即用。
 - **🎬 场景化模板**: 支持“男友视角”、“淑女风”、“居家素颜”等多种预设场景。
 
+## 🖼️ 实例效果
+
+| 示例 1 | 示例 2 | 示例 3 |
+| --- | --- | --- |
+| <a href="./1.png"><img src="./1.png" alt="Gemini XHS Vision 示例 1" width="240" /></a> | <a href="./2.png"><img src="./2.png" alt="Gemini XHS Vision 示例 2" width="240" /></a> | <a href="./3.jpg"><img src="./3.jpg" alt="Gemini XHS Vision 示例 3" width="240" /></a> |
+
 ## 🚀 快速安装
 
 1. **安装插件**:
