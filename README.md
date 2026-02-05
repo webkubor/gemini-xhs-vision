@@ -46,10 +46,25 @@
 ```
 *如果不指定 ref，插件将尝试在 assets/ 目录下寻找默认图片。*
 
-### 2. 指定模板 (Mood)
-- **`mood="elegant"`**: 强化淑女感与高级质感。
-- **`mood="candid"`**: 模拟男友视角/抓拍，去除摆拍感。
-- **`mood="pure"`**: 极致素颜效果，适合居家场景。
+### 2. 指定模板 (Template)
+- **`template="elegant"`**: 强化淑女感与高级质感。
+- **`template="candid"`**: 模拟男友视角/抓拍，去除摆拍感。
+- **`template="pure"`**: 极致素颜效果，适合居家场景。
+- **`template="wuxia"`**: 中式武侠风 / 江湖感（汉服、竹林、烟雨氛围、电影感）。
+
+默认模板文件位于 `templates/xhs-templates.json`，也支持通过 `XHS_TEMPLATES_PATH` 指向你自己的模板文件。
+
+### 3. 锁定/随机变化 (Locks + Randomize)
+默认行为：**锁定脸 + 发色**，其余（发型/衣服/背景）可随机变化。
+
+```text
+/xhs "在书店挑选杂志" template="candid"
+```
+
+如果你想完全手动指定（不随机）：
+```text
+/xhs "在落地窗边喝咖啡" template="elegant" randomize=false hair_style="low ponytail" outfit="black blazer" background="cafe interior, warm light"
+```
 
 ## ⚙️ 进阶配置
 

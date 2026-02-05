@@ -17,8 +17,18 @@ Generates an image optimized for Xiaohongshu aesthetics.
 *   **Parameters**:
     *   `prompt` (string): The user's scene description.
     *   `ref_image` (string): Optional path to a reference image (default search in `assets/` or `images/`).
-    *   `mood` (string): Optional mood override.
-    *   `aspect_ratio` (string): Default is "3:4".
+    *   `template` (string): Optional template preset name (e.g. `lifestyle`, `elegant`, `candid`, `pure`).
+    *   `mood` (string): Backward-compatible override; prefer `template` when using presets.
+    *   `aspect_ratio` (string): Default is "3:4" (can be overridden per template).
+    *   `randomize` (boolean): Whether to randomly vary unlocked attributes (default true).
+    *   `locks` (object): Lock switches (defaults: `face=true`, `hair_color=true`, others false).
+    *   `hair_style` / `hair_color` / `outfit` / `background` (string): Explicit attribute overrides.
+
+### `list_xhs_templates`
+Lists available prompt templates (presets).
+
+### `list_xhs_options`
+Lists built-in option pools for random variation (hair/outfit/background).
 
 ## Usage Rules
 

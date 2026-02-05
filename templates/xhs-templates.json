@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "defaults": {
+    "template": "lifestyle",
+    "aspect_ratio": "3:4"
+  },
+  "templates": {
+    "lifestyle": {
+      "label": "日常高级生活感",
+      "prompt": "Vibe: High-end lifestyle, clean, minimal, effortless beauty.\nLighting: High-key soft lighting, diffused, flattering.\nColor: Warm-neutral, soft contrast.\nTexture: Clean skin texture, subtle glow (not plastic)."
+    },
+    "elegant": {
+      "label": "淑女风 / 高级感",
+      "extends": "lifestyle",
+      "prompt": "Outfit: Elegant, refined, tasteful.\nMakeup: Natural luxury, clean eyeliner, soft lips.\nAccessories: Minimal, high-end.\nPose: Poised, graceful."
+    },
+    "candid": {
+      "label": "男友视角 / 抓拍感",
+      "extends": "lifestyle",
+      "prompt": "Camera: Slight motion, candid moment, imperfect but real.\nPose: Unposed, relaxed.\nFraming: Over-the-shoulder or mid-shot.\nDetails: Slight hair movement, natural expression."
+    },
+    "pure": {
+      "label": "极致素颜 / 居家感",
+      "extends": "lifestyle",
+      "prompt": "Makeup: Barely-there, fresh, dewy.\nSkin: Soft, hydrated, natural pores slightly visible.\nScene: Home, cozy, morning light.\nVibe: Pure, gentle, intimate."
+    },
+    "luxury": {
+      "label": "轻奢大片",
+      "extends": "lifestyle",
+      "prompt": "Materials: Premium textures, subtle shine.\nLighting: Studio-like softbox, controlled highlights.\nVibe: Editorial, luxury campaign.\nBackground: Clean, high-end minimal set."
+    },
+    "wuxia": {
+      "label": "中式武侠风 / 江湖感",
+      "extends": "lifestyle",
+      "prompt": "Theme: Chinese Wuxia (武侠), Jianghu vibe (江湖气).\nOutfit: Hanfu-inspired, flowing fabric, subtle embroidery, elegant and restrained.\nProps: Sword or fan (tasteful, not exaggerated).\nScene: Bamboo forest / ancient courtyard / misty mountains, ink-wash atmosphere.\nLighting: Cinematic soft rim light, light fog, layered depth.\nColor: Low-saturation, jade/ink/earth tones, refined contrast.\nComposition: Portrait with dynamic movement, wind in sleeves/hair, heroic yet clean aesthetic.\nStyle notes: Chinese aesthetic, refined, avoid overly fantasy armor.",
+      "negative": "Avoid: sci-fi, cyberpunk, modern streetwear, western medieval armor, excessive VFX, neon colors, exaggerated muscles."
+    }
+  }
+}
