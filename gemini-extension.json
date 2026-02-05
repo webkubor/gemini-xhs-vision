@@ -1,0 +1,15 @@
+{
+  "name": "xhs-vision",
+  "version": "1.0.0",
+  "description": "A specialized Gemini extension for generating Xiaohongshu (Little Red Book) style aesthetic images with automated R2 uploading.",
+  "mcpServers": {
+    "xhs-vision": {
+      "command": "node",
+      "args": ["${extensionPath}/mcp-server/dist/index.js"],
+      "env": {
+        "R2_UPLOAD_URL": "https://r2-upload-proxy.webkubor.workers.dev/"
+      }
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
