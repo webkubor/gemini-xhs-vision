@@ -16,11 +16,13 @@ Generates an image optimized for Xiaohongshu aesthetics.
 
 *   **Parameters**:
     *   `prompt` (string): The user's scene description.
-    *   `mood` (string): Optional mood (e.g., "cozy", "luxury", "street").
-    *   `aspect_ratio` (string): Default is "3:4" (Portrait) for mobile feed.
+    *   `ref_image` (string): Optional path to a reference image (default search in `assets/` or `images/`).
+    *   `mood` (string): Optional mood override.
+    *   `aspect_ratio` (string): Default is "3:4".
 
 ## Usage Rules
 
 *   When user asks for "Xiaohongshu style" or uses `/xhs`, ALWAYS use `generate_xhs_image`.
-*   The tool handles the prompt enhancement internally; do not manually add "best quality" etc.
+*   Search for reference images in `./assets/` or `./images/` if `ref_image` is not explicitly provided.
+*   The tool handles the prompt enhancement internally.
 *   Always display the returned image URL as a Markdown image: `![Image](url)`.
