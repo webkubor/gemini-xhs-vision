@@ -10,7 +10,10 @@ import { fileURLToPath } from 'url';
 // --- Configuration ---
 const SERVER_NAME = "gemini-xhs-vision";
 const SERVER_VERSION = "1.0.0";
-const R2_UPLOAD_URL = process.env.R2_UPLOAD_URL || "https://r2-upload-proxy.webkubor.workers.dev/";
+const R2_UPLOAD_URL = process.env.R2_UPLOAD_URL;
+if (!R2_UPLOAD_URL || R2_UPLOAD_URL === "YOUR_UPLOAD_PROXY_URL") {
+    console.error("[Warning] R2_UPLOAD_URL is not configured. Images will only be saved locally.");
+}
 // --- Aesthetic Presets ---
 const XHS_AESTHETIC_PROMPT = `
 Style: Xiaohongshu Aesthetic (Red aesthetic).

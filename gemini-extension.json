@@ -7,7 +7,7 @@
       "command": "node",
       "args": ["${extensionPath}/mcp-server/dist/index.js"],
       "env": {
-        "R2_UPLOAD_URL": "https://r2-upload-proxy.webkubor.workers.dev/"
+        "R2_UPLOAD_URL": "YOUR_UPLOAD_PROXY_URL"
       }
     }
   },

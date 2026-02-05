@@ -14,11 +14,23 @@
 
 ## 🚀 快速安装
 
-在您的 Gemini CLI 中运行：
+1. **安装插件**:
+   在您的 Gemini CLI 中运行：
+   ```bash
+   gemini extensions install https://github.com/webkubor/gemini-xhs-vision
+   ```
 
-```bash
-gemini extensions install https://github.com/webkubor/gemini-xhs-vision
-```
+2. **配置图床 (可选)**:
+   为了让插件自动返回 Markdown 图片链接，您需要设置 `R2_UPLOAD_URL` 环境变量（指向您的上传代理或 API）：
+   ```bash
+   export R2_UPLOAD_URL="https://your-api.com/upload"
+   ```
+
+3. **设置人像参考 (关键)**:
+   本插件的核心是“骨相锁死”。
+   - 请在您的项目根目录下创建 `docs/ucd/` 目录。
+   - 放入一张名为 `girl.png` 的基准人像图。
+   - 插件将自动识别此图片并作为所有生成的视觉参考。
 
 ## 🛠 使用指南
 
@@ -26,16 +38,17 @@ gemini extensions install https://github.com/webkubor/gemini-xhs-vision
 ```text
 /xhs "一位穿着白色羽绒服的女生在雪地里"
 ```
+*提示：如果不提供描述，它将基于基准图生成默认风格。*
 
-### 2. 指定心情
-```text
-/xhs "在图书馆看书" mood="elegant"
-```
+### 2. 指定模板 (Mood)
+- **`mood="elegant"`**: 强化淑女感与高级质感。
+- **`mood="candid"`**: 模拟男友视角/抓拍，去除摆拍感。
+- **`mood="pure"`**: 极致素颜效果，适合居家场景。
 
-### 3. 男友视角 (POV)
-```text
-/xhs "递给我一杯咖啡" mood="candid"
-```
+## ⚙️ 进阶配置
+
+如果您是开发者，可以通过修改 `mcp-server/src/index.ts` 中的 `XHS_AESTHETIC_PROMPT` 来自定义您的专属审美注入逻辑。
+
 
 ## 📂 项目结构
 
