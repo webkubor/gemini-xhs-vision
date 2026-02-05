@@ -13,7 +13,7 @@ import { pickRandom, XHS_OPTIONS } from "./xhs-options.js";
 
 // --- Configuration ---
 const SERVER_NAME = "gemini-xhs-vision";
-const SERVER_VERSION = "1.0.0";
+const SERVER_VERSION = "1.0.1";
 const R2_UPLOAD_URL = process.env.R2_UPLOAD_URL;
 
 if (!R2_UPLOAD_URL || R2_UPLOAD_URL === "YOUR_UPLOAD_PROXY_URL") {

@@ -1,9 +1,13 @@
 # 📸 Gemini XHS Vision (小红书视觉引擎)
 
+[English](README.md) · [中文文档](README.zh-CN.md)
+
 [![Gemini Extension](https://img.shields.io/badge/Gemini-Extension-blue?logo=google-gemini)](https://github.com/webkubor/gemini-xhs-vision)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Gemini XHS Vision** 是一款专为小红书（Xiaohongshu）创作者设计的 Gemini CLI 扩展插件。它将复杂的 AI 绘图指令、中式审美修饰与自动化云端存储集成于一体，实现“一键出片”。
+**EN**: **Gemini XHS Vision** is a Gemini CLI extension built for Xiaohongshu creators. It packages Chinese-aesthetic prompt styling, persona consistency controls, and optional cloud upload into a one-command workflow.
+
+**中文**：**Gemini XHS Vision** 是一款专为小红书（Xiaohongshu）创作者设计的 Gemini CLI 扩展插件。它将中式审美 Prompt 模板、人物一致性控制与（可选的）自动化云端存储集成于一体，实现“一键出片”。
 
 ## ✨ 核心特性
 
